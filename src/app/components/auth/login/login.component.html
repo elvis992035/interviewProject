@@ -1,0 +1,36 @@
+<form class="forml" #loginForm="ngForm">
+
+    <fieldset>
+
+      <legend>Login</legend>
+
+      <label for="username">Username</label> <br />
+
+      <input
+        type="text"
+        name="emailInput"
+        [(ngModel)]="emailInput"
+        value="{{emailInput}}"
+      /><br />
+
+      <label for="password">Password</label><br />
+
+      <input
+        type="password"
+        name="passwordInput"
+        [(ngModel)]="passwordInput"
+        value="{{passwordInput}}"
+      /><br /><br />
+      <label>
+
+        <button type="submit" class="login" (click)="signInForm(loginForm)">
+          Log in
+        </button>
+
+      </label>
+
+      <a  routerLink="/signup" > Register </a>
+
+    </fieldset>
+
+  </form>

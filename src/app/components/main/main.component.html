@@ -1,0 +1,35 @@
+<form class="forml" >
+
+    <fieldset>
+      <legend>User Information</legend>
+
+      <label for="name">First Name : {{name}}</label>
+
+      <br />
+
+      <label for="lastname">Last Name : {{lname}} </label>
+
+      <br />
+
+      <label for="email">Email : {{myEmail}} </label>
+
+      <br />
+
+      <label for="zipcode">Zip Code : {{zipcode}} </label>
+
+      <br />
+
+      <label for="ID">ID : {{id}} </label>
+
+      <br />
+
+      <label>
+
+        <button type="button" (click) = "signOut()" routerLink='../'>
+          Sign Out
+        </button>
+
+      </label>
+
+    </fieldset>
+  </form>
